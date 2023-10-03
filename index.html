@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>CALCULATOR</h1>
+    <div class="container">
+        <div class="display"><input type="text" id="expr" readonly></div>
+        <div class="buttons">
+            <div class="btn" onclick="clearNum()">AC</div>
+            <div class="btn" onclick="deleteNum()">DEL</div>
+            <div class="btn" onclick="appendNum('%')">%</div>
+            <div class="btn" onclick="appendNum('/')">/</div>
+            <div class="btn" onclick="appendNum('7')">7</div>
+            <div class="btn" onclick="appendNum('8')">8</div>
+            <div class="btn" onclick="appendNum('9')">9</div>
+            <div class="btn" onclick="appendNum('*')">*</div>
+            <div class="btn" onclick="appendNum('4')">4</div>
+            <div class="btn" onclick="appendNum('5')">5</div>
+            <div class="btn" onclick="appendNum('6')">6</div>
+            <div class="btn" onclick="appendNum('-')">-</div>
+            <div class="btn" onclick="appendNum('1')">1</div>
+            <div class="btn" onclick="appendNum('2')">2</div>
+            <div class="btn" onclick="appendNum('3')">3</div>
+            <div class="btn" onclick="appendNum('+')" style="grid-row: span 2; height: 120px;">+</div>
+            <div class="btn" onclick="appendNum('.')">.</div>
+            <div class="btn" onclick="appendNum('0')">0</div>
+            <div class="btn" onclick="outAns()">=</div>
+    
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
